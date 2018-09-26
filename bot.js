@@ -144,7 +144,7 @@ $لو خيروك                      | لتلعب لعبة لو خيروك
      if (message.content === "$help") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
-               .setFooter(`ArabicoBot`, 'https://images-ext-2.discordapp.net/external/lrVzKt7T8b5JZz-VcYfH6ICQtHA0Bj8_AXkq_JO2ZX8/https/cdn.discordapp.com/attachments/411548285740908551/411550507363074048/6k0g8EYs.jpg')
+               .setFooter(`[GLaD] SysTeM`, 'https://media.discordapp.net/attachments/493443213093240832/494200503056465941/1r.png?width=301&height=301')
   .setColor("#9B59B6")
   .addField("تم ارسال الاوامر في الخاص + تاكد انك فاتح الخاص :]")
 
@@ -187,7 +187,7 @@ client.on("message", message => {
         color: 0x06DF00,
         description: "تم مسح الرسائل بنجاح",
         footer: {
-          text: "ArabicoBot"
+          text: "GLaD SysTeM"
         }
       }}).then(msg => {msg.delete(3000)});
                           }
