@@ -61,7 +61,7 @@ client.on("message", msg => {
 
 
 client.on('message', message => {
-     if (message.content === "!help") {
+     if (message.content === "$help") {
 message.author.send("االبوت العربي الجديد ذو الاوامر الخورافية" + `  **
 
 **`);
@@ -70,7 +70,7 @@ message.author.send("االبوت العربي الجديد ذو الاوامر 
 
 
 client.on('message', message => {
-     if (message.content === "!help") {
+     if (message.content === "$help") {
 message.author.send("" + `  **
 !ping                | سرعة الأتصال
 !id                  | معلومــات عــن حســابــك
