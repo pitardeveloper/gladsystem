@@ -757,7 +757,7 @@ client.on('ready',async () => {
  client.on('message', message => {
               if(!message.channel.guild) return;
     var prefix = "$";
-    if(message.content.startsWith('$bc')) {
+    if(message.content.startsWith('bc')) {
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
   if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
     let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
@@ -779,10 +779,10 @@ client.on('ready',async () => {
        Discord.RichEmbed()
        .setColor('RANDOM')
        .setTitle('Broadcast')
-       .addField('Server', message.guild.name)
-       .addField('Sender', message.author.username)
-       .addField('Message', args)
-       .setImage("هنا حط رابط الصوره اللي بتظهر")
+       .addField('السيرفر', message.guild.name)
+       .addField('المرسل', message.author.username)
+       .addField('الرسالة', args)
+       .setImage("https://media.discordapp.net/attachments/493443213093240832/494200503056465941/1r.png?width=301&height=301")
        .setThumbnail(message.author.avatarURL)
        .setFooter(copy, client.user.avatarURL);
     m.send({ embed: bc })
