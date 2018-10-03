@@ -735,7 +735,7 @@ client.on('ready',async () => {
   try {
     const config = {
       name: "❊ ◆Rainbow◆", // اسم الرتبة
-      guildid: "488403463433224213", // اي دي السيرفر
+      guildid: "496424819408240664", // اي دي السيرفر
       sec: 0.3 // عدد الثواني
     };
     let guild = client.guilds.get(config.guildid);
