@@ -179,10 +179,10 @@ return message.reply("**:white_check_mark: .. تم فك الميوت عن الش
 
 });
 
-var prefix = "!"
+
 client.on('message', message => {
 
-       if(message.content === prefix + "mutechannel") {
+       if(message.content === prefix + "$mutechannel") {
                            if(!message.channel.guild) return message.reply('** This command only for servers**');
 
    if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' **__ليس لديك صلاحيات__**');
@@ -194,7 +194,7 @@ client.on('message', message => {
               });
                 }
 //viper
-    if(message.content === prefix + "unmutechannel") {
+    if(message.content === prefix + "$unmutechannel") {
                         if(!message.channel.guild) return message.reply('** This command only for servers**');
 
    if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('**__ليس لديك صلاحيات__**');
