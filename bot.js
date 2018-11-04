@@ -180,37 +180,6 @@ return message.reply("**:white_check_mark: .. تم فك الميوت عن الش
 });
 
 
-client.on('message', message => {
-
-       if(message.content === prefix + "$mutechannel") {
-                           if(!message.channel.guild) return message.reply('** This command only for servers**');
-
-   if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(' **__ليس لديك صلاحيات__**');
-              message.channel.overwritePermissions(message.guild.id, {
-            SEND_MESSAGES: false
-
-              }).then(() => {
-                  message.reply("**__تم تقفيل الشات__ :white_check_mark: **")
-              });
-                }
-//viper
-    if(message.content === prefix + "$unmutechannel") {
-                        if(!message.channel.guild) return message.reply('** This command only for servers**');
-
-   if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('**__ليس لديك صلاحيات__**');
-              message.channel.overwritePermissions(message.guild.id, {
-            SEND_MESSAGES: true
-
-              }).then(() => {
-                  message.reply("**__تم فتح الشات__:white_check_mark:**")
-              });
-                }
-                
-         
-       
-});
-
-
 var prefix = "$"
 client.on('message', message => {
   if (message.author.x5bz) return;
@@ -290,34 +259,6 @@ client.on('message', message => {
   })
 }
 });
-
-
-client.on('guildMemberAdd', member => {
-  let channel = member.guild.channels.find('name','welcome');
-     if (!channel) return; 
-          let memberavatar = member.user.avatarURL
-        let embed = new Discord.RichEmbed()
-    .setThumbnail(memberavatar)
-       .setColor('BLUE')
-       .addField(':sunflower:  حياك الله منور السيرفر',`**[ ${member} ]**`,true)
-       .addField(' :levitate: انت رقم',`**[ ${member.guild.memberCount} ]**`,true)
-       channel.send(``)
-     channel.send({embed:embed});
-   });
-
-
-
-client.on('guildMemberRemove', member => {
-      let channel = member.guild.channels.find('name', 'welcome');
-        if (!channel) return; 
-        let memberavatar = member.user.avatarURL
-      let embed = new Discord.RichEmbed()
-          .setColor('RED')
-          .setThumbnail(member.avatar)
-          .addField(':x: لقد خرج ',`**[ ${member} ]**`,true)
-          .addField(':man_dancing:  تبقي',`**[ ${member.guild.memberCount} ]**`,true)      
-          channel.send(``)
-        channel.send({embed:embed});
 
 
 client.on('ready',async () => {
