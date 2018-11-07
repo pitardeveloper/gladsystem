@@ -327,7 +327,6 @@ client.on('ready',async () => {
     }
     });
 
-});
 client.on('message', msg => {
   if (msg.content === 'باك') {
     msg.reply('**ولكم منور يا عسل**');
