@@ -369,5 +369,35 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content === '$Rainbow-speed 0.2') {
+    msg.reply('**Success :white_check_mark: **');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === '$Rainbow-speed 0.3') {
+    msg.reply('**Success :white_check_mark: **');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === '$Rainbow-speed 0.1') {
+    msg.reply('**This Rainbow Speed already used **');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === '$Rainbow-speed 0.1') {
+    msg.reply('**This Rainbow Speed already used **');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === '$Rainbow-speed 1') {
+    msg.reply('**Success :white_check_mark:**');
+  }
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
