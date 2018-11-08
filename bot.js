@@ -265,7 +265,7 @@ client.on('ready',async () => {
   console.log(client.user.username);
   try {
      const config = {
-      name: "❊ ◆Rainbow◆", // اسم الرتبة
+      name: "● Rainbow", // اسم الرتبة
       guildid: "507868593103568901", // اي دي السيرفر
       sec: 1 // عدد الثواني
     };
