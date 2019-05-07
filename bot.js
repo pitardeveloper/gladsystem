@@ -35,7 +35,7 @@ client.on('message', message => {
 
 // playing
 client.on('ready', () => {
-                                                                                                                                                                                                                                                                              client.user.setGame(`RainBoW Bot | System By PiTaR`,'https://www.twitch.tv/v5bz');
+                                                                                                                                                                                                                                                                              client.user.setGame(`Empire CLAN BOT`,'https://www.twitch.tv/v5bz');
 });
 
 
